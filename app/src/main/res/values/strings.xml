@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">UWEACC</string>
+    <string name="title_label">WATERLOO</string>
+    <string name="subtitle_label">ENGINEERING</string>
+    <string name="top_six_marks_label">Top 6 Average:</string>
+    <string name="english_mark_label">ENG4U:</string>
+    <string name="functions_mark_label">MHF4U:</string>
+    <string name="calculus_mark_label">MCV4U:</string>
+    <string name="physics_mark_label">SPH4U:</string>
+    <string name="chemistry_mark_label">SCH4U:</string>
+    <string name="other_mark_label">Other U/M Course:</string>
+    <string name="ib_status_label">International Baccalaureate</string>
+    <string name="aif_score_label">AIF Score:</string>
+    <string name="interview_score_label">Interview Score:</string>
+    <string name="english_mark"></string>
+    <string name="functions_mark"></string>
+    <string name="calculus_mark"></string>
+    <string name="physics_mark"></string>
+    <string name="chemistry_mark"></string>
+    <string name="other_course_mark"></string>
+    <string name="aif_score"></string>
+    <string name="interview_score"></string>
+    <string name="ib_status_switch" />
+    <string name="calculate_label">CALCULATE</string>
+    <string name="admission_chance_label">Your Admission Chance:</string>
+    <string name="admission_chance">0%</string>
+    <string name="clear_label">CLEAR</string>
+
+    <string-array name="schools_array">
+        <item>"Dr Norman Bethune CI</item>
+        <item>Sir John A Macdonald CI</item>
+        <item>Don Mills CI</item>
+        <item>Marc Garneau CI</item>
+        <item>Grimsby SS</item>
+        <item>Southern Ontario College</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="programs_array">
+        <item>Architectural Engineering</item>
+        <item>Architecture</item>
+        <item>Biomedical Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Environmental Engineering</item>
+        <item>Geological Engineering</item>
+        <item>Management Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Mechatronics Engineering</item>
+        <item>Nanotechnology Engineering</item>
+        <item>Software Engineering</item>
+        <item>Systems Design Engineering</item>
+    </string-array>
+</resources>

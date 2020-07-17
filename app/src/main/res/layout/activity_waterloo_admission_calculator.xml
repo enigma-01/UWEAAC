@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterlooAdmissionCalculatorActivity">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="155dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginStart="103dp"
+        android:gravity="center_horizontal"
+        android:text="@string/title_label"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/subtitleLabel"
+        android:layout_width="129dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginStart="116dp"
+        android:gravity="center_horizontal"
+        android:text="@string/subtitle_label"
+        android:textAllCaps="false"
+        android:textColor="@color/WaterlooEngineeringPurple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLabel" />
+
+    <Spinner
+        android:id="@+id/programSpinner"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleLabel" />
+
+    <Spinner
+        android:id="@+id/schoolSpinner"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="7dp"
+        android:entries="@array/schools_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleLabel" />
+
+    <TextView
+        android:id="@+id/topSixMarksLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_horizontal"
+        android:text="@string/top_six_marks_label"
+        android:textColor="@color/WaterlooEngineeringPurple"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/programSpinner" />
+
+    <TextView
+        android:id="@+id/englishMarkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/english_mark_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topSixMarksLabel"
+        tools:text="ENG4U:" />
+
+    <TextView
+        android:id="@+id/calculusMarkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/calculus_mark_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/functionsMarkLabel"
+        tools:text="MCV4U:" />
+
+    <TextView
+        android:id="@+id/physicsMarkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/physics_mark_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculusMarkLabel"
+        tools:text="SPH4U:" />
+
+    <TextView
+        android:id="@+id/chemistryMarkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/chemistry_mark_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/physicsMarkLabel"
+        tools:text="SCH4U:" />
+
+    <TextView
+        android:id="@+id/functionsMarkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/functions_mark_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/englishMarkLabel"
+        tools:text="MHF4U:" />
+
+    <TextView
+        android:id="@+id/otherMarkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/other_mark_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chemistryMarkLabel"
+        tools:text="Other U/M Course:" />
+
+    <TextView
+        android:id="@+id/ibStatusLabel"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="11dp"
+        android:gravity="right"
+        android:text="@string/ib_status_label"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherMarkLabel" />
+
+    <TextView
+        android:id="@+id/aifScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/aif_score_label"
+        android:textColor="@color/WaterlooEngineeringPurple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibStatusLabel" />
+
+    <TextView
+        android:id="@+id/interviewScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/interview_score_label"
+        android:textColor="@color/WaterlooEngineeringPurple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aifScoreLabel" />
+
+    <EditText
+        android:id="@+id/englishMarkEditText"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/english_mark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/englishMarkLabel"
+        app:layout_constraintTop_toBottomOf="@+id/schoolSpinner" />
+
+    <EditText
+        android:id="@+id/functionsMarkEditText"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/functions_mark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/functionsMarkLabel"
+        app:layout_constraintTop_toBottomOf="@+id/englishMarkEditText" />
+
+    <EditText
+        android:id="@+id/calculusMarkEditText"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/calculus_mark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/calculusMarkLabel"
+        app:layout_constraintTop_toBottomOf="@+id/functionsMarkEditText" />
+
+    <EditText
+        android:id="@+id/physicsMarkEditText"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/physics_mark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/physicsMarkLabel"
+        app:layout_constraintTop_toBottomOf="@+id/calculusMarkEditText" />
+
+    <EditText
+        android:id="@+id/chemistryMarkEditText"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/chemistry_mark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/chemistryMarkLabel"
+        app:layout_constraintTop_toBottomOf="@+id/physicsMarkEditText" />
+
+    <EditText
+        android:id="@+id/otherCourseMarkEditText"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/other_course_mark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/otherMarkLabel"
+        app:layout_constraintTop_toBottomOf="@+id/chemistryMarkEditText" />
+
+    <EditText
+        android:id="@+id/aifScoreEditText"
+        android:layout_width="98dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/aif_score"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/aifScoreLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ibStatusSwitch" />
+
+    <EditText
+        android:id="@+id/interviewScoreEditText"
+        android:layout_width="98dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/interview_score"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/interviewScoreLabel"
+        app:layout_constraintTop_toBottomOf="@+id/aifScoreEditText" />
+
+    <Switch
+        android:id="@+id/ibStatusSwitch"
+        android:layout_width="103dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/ib_status_switch"
+        android:textColor="@android:color/background_light"
+        android:thumb="@color/WaterlooEngineeringPurple"
+        app:layout_constraintStart_toEndOf="@+id/ibStatusLabel"
+        app:layout_constraintTop_toBottomOf="@+id/otherCourseMarkEditText" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/WaterlooEngineeringPurple"
+        android:text="@string/calculate_label"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interviewScoreLabel" />
+
+    <TextView
+        android:id="@+id/admissionChanceLabel"
+        android:layout_width="137dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal|clip_vertical"
+        android:text="@string/admission_chance_label"
+        android:textColor="@color/WaterlooEngineeringPurple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/calculateButton"
+        app:layout_constraintTop_toBottomOf="@+id/interviewScoreEditText" />
+
+    <TextView
+        android:id="@+id/chanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/admission_chance"
+        android:textColor="@color/WaterlooEngineeringPurple"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/calculateButton"
+        app:layout_constraintTop_toBottomOf="@+id/admissionChanceLabel" />
+
+    <Button
+        android:id="@+id/clearButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/clear_label"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateButton" />
+
+</android.support.constraint.ConstraintLayout>
