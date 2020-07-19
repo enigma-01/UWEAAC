@@ -7,11 +7,14 @@ The chances for admission are calculated by functions modelled after [the ones](
 
 The calculated admission chance is not to be taken seriously, and is not representitative of the University of Waterloo's admissions process.
 
-## Screenshots
+## Screenshots (to be added)
+
+## How to Use
+To use UWEACC, clone this repository, open it in Android Studio, and subsequently deploy it to your device (Currently, this app is only formatted for a Nexus 7 tablet, as a Samsung Galaxy S7).
 
 ## Tools Used
-UWEACC was built entirely using [Android Studio](https://developer.android.com/studio).
-Images were created using [GIMP](https://www.gimp.org/)
+- UWEACC was built entirely using [Android Studio](https://developer.android.com/studio)
+- Images were created using [GIMP](https://www.gimp.org/)
 
 ## Author
-Kevin Pierce
+- Kevin Pierce
