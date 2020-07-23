@@ -349,6 +349,30 @@ public class WaterlooAdmissionCalculatorActivity extends Activity {
         else if (selectedSchool == 5)
             return 25.7;
 
+            // Northview Heights SS adjustment factor
+        else if (selectedSchool == 6)
+            return 10.1;
+
+            // Lawrence Park CI adjustment factor
+        else if (selectedSchool == 7)
+            return 10.4;
+
+            // Bell HS adjustment factor
+        else if (selectedSchool == 8)
+            return 10.4;
+
+            // Earl of March SS adjustment factor
+        else if (selectedSchool == 9)
+            return 10.5;
+
+            // All Saints Catholic HS adjustment factor
+        else if (selectedSchool == 10)
+            return 10.5;
+
+            // Guelph C and VI adjustment factor
+        else if (selectedSchool == 11)
+            return 10.6;
+
             // Generic Ontario Secondary School adjustment factor
         else
             return 16.3;
